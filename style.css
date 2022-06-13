@@ -13,6 +13,7 @@ nav {
   padding: 20px 10px;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
+  background-color: lightgrey;
 }
 ul {
   display: flex;
@@ -30,8 +31,9 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 100%;
+  height: auto;
   padding-top: 100px;
+  background-color: gray;
 }
 main h1 {
   letter-spacing: 0.2rem;
@@ -44,4 +46,29 @@ main h1 {
   text-align: center;
   margin: 0 auto;
   padding:0.3rem;
+  margin-bottom: 2rem;
+}
+.book-holder{
+  display: grid;
+  grid-gap: 10px;
+
+}
+.book-item{
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+  background-color: antiquewhite;
+  align-items: center;
+  justify-content: center;
+}
+.modal-container{
+position: fixed;
+width: 80vw;
+height: 80vh;
+left: 50%;
+top: 50%;
+background-color: white;
+transform: translate(-50%, -50%);
+border: solid black 1px;
+z-index: 10;
+display: none;
 }
